@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 2</title>
+        <!-- Elaborar um script em que dada a idade de um nadador, classifique-o em uma das seguintes categorias: infantil A (de 5 a 7 anos), infantil B (de 8 a 10 anos), juvenil A (de 11 a 13 anos), juvenil B (14 a 17 anos) e senior (maior que 17 anos) -->
+    </head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="/static/js/ex2.js"></script>
+    <body>
+        <div class="container">
+            <div class="card-body">
+                <h1>Classificar nadador</h1>
+
+                <div class="form-group">
+                    <label for="altura">Nome do nadador:</label>
+                    <input type="text" class="form-control" id="nomeNadador" aria-describedby="nomeAjuda" placeholder="Nome">
+                    <small id="alturaAjuda" class="form-text text-muted">entre com o nome do nadador</small>
+                    <label for="altura">Idade:</label>
+                    <input type="number" class="form-control" id="idadeNadador" aria-describedby="idadeAjuda" placeholder="Nome">
+                    <small id="alturaAjuda" class="form-text text-muted">entre com a idade do nadador.</small>
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="classificarNadador()">Enviar</button>
+            </div>
+            <div class="card-body">
+                <h3>Classificação: </h3>
+                <table class="table">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Classificação</th>
+                    </tr>
+                    <tr>
+                        <td id="nomeTabela"></td>
+                        <td id="idadeTabela"></td>
+                        <td id="classificacao"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>>

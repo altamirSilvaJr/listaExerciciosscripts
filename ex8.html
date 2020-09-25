@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 8</title>
+        <!-- Em uma eleição presidencial existem dois candidatos. Os votos são informados
+através de códigos. Os dados utilizados para a contagem dos votos têm-se a seguinte
+codificação: 1,2 = voto para os respectivos candidatos; 3= voto nulo; 4= voto em
+branco; Elabore um script que leia o código do candidato em um voto. Calcule e
+escreva: (1) percentual de votos para cada candidato; (2) percentual de votos nulos;
+(3) percentual de votos em branco; -->
+    </head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="/static/js/ex8.js"></script>
+
+    <body>
+        <div class="container">
+            <div class="card-body">
+                <h1>Eleições presidenciais</h1>
+
+                <p>Leganda de votos:</p>
+                <table class="table table-hover">
+                    <tr>
+                        <th>Opção</th>
+                        <th>Valor da opção</th>
+                    </tr>
+                    <tr>
+                        <td>Candidato 1</td>
+                        <td>Digite 1</td>
+                    </tr>
+                    <tr>
+                        <td>Candidato 2</td>
+                        <td>Digite 2</td>
+                    </tr>
+                    <tr>
+                        <td>Votar em branco</td>
+                        <td>Digite 3</td>
+                    </tr>
+                    <tr>
+                        <td>Votar nulo</td>
+                        <td>Digite 4</td>
+                    </tr>
+                </table>
+
+                <div class="form-group">
+                    <label for="altura">Voto</label>
+                    <input type="number" class="form-control" id="voto" aria-describedby="votoAjuda" placeholder="Voto">
+                    <small id="alturaAjuda" class="form-text text-muted">Digite sua opção de voto.</small>
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="votar()">Votar</button>
+                <div class="card-body">
+                    <table class="table">
+                        <tr>
+                            <th>Total de votos</th>
+                            <th>Candidato 1</th>
+                            <th>Candidato 2</th>
+                            <th>Votos em Branco</th>
+                            <th>Votos Nulos</th>
+                        </tr>
+                        <tr>
+                            <td id="totalVotos"></td>
+                            <td id="candidato1"></td>
+                            <td id="candidato2"></td>
+                            <td id="votosBrancos"></td>
+                            <td id="votosNulos"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

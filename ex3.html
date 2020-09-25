@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 3</title>
+        <!-- Construa um script que calcule o novo salário de um funcionário. Considere que o
+funcionário deverá receber um reajuste de 15% caso seu salário seja menor que 1000.
+Se o salário for maior ou igual a 1000, mas menor ou igual a 1500, o reajuste deve ser
+de 10%. Caso o salário seja maior que 1500, o reajuste deve ser de 5%.-->
+    </head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="/static/js/ex3.js"></script>
+    <body>
+        <div class="container">
+            <div class="card-body">
+                <h1>Cálculo de reajuste de salário</h1>
+                <div class="form-group">
+                    <label for="salarioAtual">Salário Atual</label>
+                    <input type="number" class="form-control" id="salarioAtual" aria-describedby="salarioAtualAjuda" placeholder="Salário Atual">
+                    <small id="alturaAjuda" class="form-text text-muted">entre com o salário atual do funcionário</small>
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="calcularSalario()">Enviar</button>
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <tr>
+                        <th>Salário Atual</th>
+                        <th>Ajuste</th>
+                        <th>Novo Salário</th>
+                    </tr>
+                    <tr>
+                        <td id="atualSal"></td>
+                        <td id="reajuste"></td>
+                        <td id="salarioNovo"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </body>
+</html>

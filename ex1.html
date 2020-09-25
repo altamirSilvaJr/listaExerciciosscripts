@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 1</title>
+    </head>
+
+    <!-- Elabore um script que solicite o peso e a altura de uma determinada pessoa. Após a digitação, exibir se esta pessoa está ou não com seu peso ideal, conforme tabela abaixo: IMC (IMC = peso / altura²) MENSAGEM imc < 20 Abaixo do peso 20 > = imc < 25 Peso Ideal IMC > = 25 Acima do Peso -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="/static/js/ex1.js"></script>
+    <body>
+        <div class="container">
+            <div class="card-body">
+                <h1>Cálculadora de IMC</h1>
+
+                <div class="form-group">
+                    <label for="altura">Email address</label>
+                    <input type="number" class="form-control" id="altura" aria-describedby="alturaAjuda" placeholder="Altura">
+                    <small id="alturaAjuda" class="form-text text-muted">entre com sua sua altura em centímetros</small>
+                    <label for="peso">Peso</label>
+                    <input type="number" class="form-control" id="peso" aria-describedby="ajudaPeso" placeholder="Peso">
+                    <small id="alturaAjuda" class="form-text text-muted">entre com seu peso em quilogramas</small>
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="calcularIMC()">Enviar</button>
+                <div class="card-body">
+                    <h3 id="resultadoIMC"></h1>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
